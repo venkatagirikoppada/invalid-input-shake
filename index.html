@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invalid Input Shake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form id="myForm">
+            <P>Lets Shake! </P>
+            <div id="errorMessage" class="error-message">Invalid Input</div>
+            <input id="inputField" type="text" id="inputField" placeholder="Enter Some Text" required>
+            <input id="inputField" type="text" class="name" placeholder="Enter Your Name" required>
+            <input  id="inputField"type="password" placeholder="Enter Your Password" required >
+            <input  id="inputField"type="email" placeholder="Enter Your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <button onclick="validateInput()" type="submit">Submit</button>
+        </form>
+        
+    <script src="script.js"></script>
+</body>
+</html>
